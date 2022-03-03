@@ -128,7 +128,7 @@ WHERE
                 JOIN
             rental B USING (inventory_id)
         WHERE
-            b.customer_id = (SELECT 
+            B.customer_id = (SELECT 
                     customer_id
                 FROM
                     payment
